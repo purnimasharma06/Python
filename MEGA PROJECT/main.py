@@ -1,3 +1,5 @@
+import os
+
 import speech_recognition as sr
 import webbrowser
 import pyttsx3 # text to speech
@@ -9,7 +11,7 @@ import pygame
 
 recognizer = sr.Recognizer() # it helps to recognize the speech and convert it into text
 #engine = pyttsx3.init() # it helps to convert text into speech
-newsapi = "NEWS_API" # news api key
+newsapi = os.getenv("NEWS_API") # news api key
 
 def speak_old(text):
     engine = pyttsx3.init()
@@ -38,8 +40,7 @@ def speak(text):
     # os.remove("temp.mp3") 
 
 def aiProcess(command):
-    client = OpenAI(api_key="API_KEY"),
-    
+    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
     completion = client.chat.completions.create(
     model="gpt-3.5-turbo",
@@ -70,7 +71,7 @@ def processCommand(c):
         link = musicLibrary.music[song]
         webbrowser.open(link)
     elif "news" in c.lower():
-        r = requests.get(f"https://newsapi.org/v2/top-headlines?country=us&apiKey={newsapi}")
+        r = requests.get(f"https://newsapi.org/v2/top-headlines?country=us")
         if r.status_code == 200:
             # Parse the JSON response
             data = r.json()
