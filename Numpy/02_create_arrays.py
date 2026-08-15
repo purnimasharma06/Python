@@ -19,7 +19,6 @@ print(ones)
 full = np.full((3, 4), 7) # 3 rows and 4 columns, filled with 7
 print(full)
 
-
 # creating sequences of numbers in numpy
 # arrange(start, stop, step)  # 1D array
 arr1 = np.arange(0, 10, 2) # start=0, stop=10, step=2
