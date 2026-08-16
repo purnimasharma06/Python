@@ -27,4 +27,3 @@ print(arr1)
 # creating identity matrix
 identity = np.eye(3) # 3x3 identity matrix
 print(identity)
-
