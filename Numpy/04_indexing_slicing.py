@@ -20,6 +20,7 @@ print(arr[::-1]) # Output: [5 4 3 2 1] - elements from end to start with a step 
 arr = np.array([10, 20, 30, 40, 50, 60])
 print(arr[[0, 2, 4]]) # Output: [10 30 50] - elements at index 0, 2 and 4
 
+
 # filtering data/ boolean masking - access elements based on a condition
 arr = np.array([10, 20, 30, 40, 50, 60])
 print(arr[arr > 30]) # Output: [40 50 60] - elements greater than 30
