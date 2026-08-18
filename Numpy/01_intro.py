@@ -14,4 +14,4 @@ matrix = np.array([[2, 4, 6], [8, 10, 12], [14, 16, 18]])
 print(matrix)
 
 # size of one item in bytes
-print(arr.itemsize)
+print(matrix.itemsize)
