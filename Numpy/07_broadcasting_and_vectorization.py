@@ -15,6 +15,7 @@ print(final_prices)  # Output: [90.0, 180.0, 270.0, 360.0, 450.0] - final prices
 # Using broadcasting 
 import numpy as np
 
+
 new_prices = np.array([100, 200, 300])
 new_dis = 10
 final = new_prices - (new_prices * new_dis / 100)
