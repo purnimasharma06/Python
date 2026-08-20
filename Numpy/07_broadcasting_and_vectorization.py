@@ -22,7 +22,6 @@ final = new_prices - (new_prices * new_dis / 100)
 print(final)  # Output: [90. 180. 270.] - final prices
 
 
-
 # How numpy handles arrays of diff shapes 
 # 1. Matching dimensions - if the dimensions of the arrays are the same, they can be operated on element-wise.
 # 2. Expanding Single Elements - if one of the arrays has a single element, it can be broadcasted to match the shape of the other array.
