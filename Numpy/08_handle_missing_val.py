@@ -6,7 +6,6 @@ import numpy as np
 arr = np.array([1, 2, np.nan, 4, np.nan])
 print(np.isnan(arr))  # Output: [False False  True False  True] , also the values can be compared directly
 
-
 # np.nan_to_num(array, nan=value) - to replace NaN with a specified value (default is 0)
 
 temp = np.array([1, 2, np.nan, 4, np.nan])
