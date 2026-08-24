@@ -1,7 +1,6 @@
 # Handling missing values in numpy
 #  built in functions 
 # np.isnan(array) - to check if the value is NaN(detect missing values) - returns boolean 
-
 import numpy as np
 arr = np.array([1, 2, np.nan, 4, np.nan])
 print(np.isnan(arr))  # Output: [False False  True False  True] , also the values can be compared directly
