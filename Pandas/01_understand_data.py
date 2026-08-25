@@ -32,4 +32,3 @@ df.to_excel('output.xlsx', index=False)  # Save the dataframe to an Excel file
 
 # save file in json
 df.to_json('output.json')  # Save the dataframe to a JSON file
-
