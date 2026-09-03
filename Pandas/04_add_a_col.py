@@ -1,5 +1,4 @@
 # How to modify the dataframe
-
 import pandas as pd
 
 data = {
