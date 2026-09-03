@@ -12,4 +12,5 @@
 # df.describe()  # Display summary statistics of the dataframe, including count, mean, std, min, max, and quartiles for numerical columns
 
 # df.shape  # Display the number of rows and columns in the dataframe as a tuple (rows, columns)
+
 # df.columns  # Display the column names of the dataframe as an Index object
