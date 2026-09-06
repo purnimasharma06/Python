@@ -2,7 +2,6 @@
 # None - for object data types 
 
 
-
 # How to detect missing data 
 # isnull() - returns true - NaN is missing or false - value is present 
 import pandas as pd
