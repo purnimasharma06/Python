@@ -16,7 +16,6 @@ print(df)
 df.fillna(0, inplace=True)
 print(df) # This is only valid where you have numerical numbers in the table , and you are replacing it with zero , if you want to replace a str you should handle it separately
 
-
 # Fill calculated value
 df['Age'].fillna(df['Age'].mean(), inplace=True)
 print(df)
