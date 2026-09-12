@@ -29,4 +29,3 @@ print(grouped)
 
 # For multiple cols
 print(df.groupby(["Age", "Name"])["Salary"].sum())
-
