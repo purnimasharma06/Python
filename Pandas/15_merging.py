@@ -12,6 +12,7 @@ df_orders = pd.DataFrame({
     'OrderAmount':[250, 450, 350]
 })
 
+
 # merge
 df_merge = pd.merge(df_customer, df_orders, on="CustomerID", how="inner")
 print("Inner Join")
@@ -31,6 +32,7 @@ print(df_merge) # left side wale table ko pura rakhega , jo ki right wale se mat
 df_merge = pd.merge(df_customer, df_orders, on="CustomerID", how="right")
 print("Right Join")
 print(df_merge) # right side wale table ko pura rakhega, jo ki left wale table se match kregi baki NaN se fill
+
 
 df_merge = pd.merge(df_customer, df_orders, on="CustomerID", how="cross")
 print("Cross Join")
