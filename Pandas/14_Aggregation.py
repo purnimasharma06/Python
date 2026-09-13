@@ -4,4 +4,3 @@
 #  count()
 #  min()
 #  max()
-#  std()
