@@ -32,7 +32,6 @@ df_merge = pd.merge(df_customer, df_orders, on="CustomerID", how="right")
 print("Right Join")
 print(df_merge) # right side wale table ko pura rakhega, jo ki left wale table se match kregi baki NaN se fill
 
-
 df_merge = pd.merge(df_customer, df_orders, on="CustomerID", how="cross")
 print("Cross Join")
 print(df_merge) # suppose you have 1df of m rows and other df of n rows , so in cross join the resultant will be of m x n join, returns all the possible pairs of rows, create combination, matching all the products
